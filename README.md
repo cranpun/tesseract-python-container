@@ -1,5 +1,5 @@
 # tesseract-python-container
-Docker container for tesseract by python (pytesseract).
+Docker container for tesseract with python (pytesseract).
 
 # environment
 only docker & docker-compose
@@ -16,7 +16,7 @@ $ docker-compose exec tesseractpython python /path/to/your/script/on/container
 This docker container maps top of git repository directory to `/opt/` on container. 
 
 # how to use tesseract command
-If you use tesseract command (without python), run on commandline `docker-compose exec tesseractpython tesseract ....`.
+If you use tesseract command (without python), run on commandline `docker-compose exec tesseractpython tesseract ....`
 
 # sample
 
