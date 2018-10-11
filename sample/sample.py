@@ -12,7 +12,7 @@ if __name__ == '__main__':
     margin_w = 20;
     margin_h = 15;
 
-    for imgid in range(1, 3):
+    for imgid in range(1, 5):
         img = Image.open(os.path.dirname(os.path.abspath(__file__)) + "/sample" + str(imgid) + ".png", "r");
 
         for pos_h in range(0, 3):
@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
                 # 該当のマスをトリミング
                 crop = img.crop((leftpos_x, leftpos_y, leftpos_x + w, leftpos_y + h));
-                # crop.save("/opt/crop" +  str(pos_h) + "-" + str(pos_w) + ".png");
+                crop.save("/opt/crop" + str(imgid) + "-" +  str(pos_h) + "-" + str(pos_w) + ".png");
 
                 # インストールしたtesseractコマンドのパス
                 pytesseract.tesseract_cmd = "/usr/bin/tesseract";
