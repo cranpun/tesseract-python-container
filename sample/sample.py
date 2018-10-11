@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
                 # 該当のマスをトリミング
                 crop = img.crop((leftpos_x, leftpos_y, leftpos_x + w, leftpos_y + h));
-                crop.save("/opt/crop" + str(imgid) + "-" +  str(pos_h) + "-" + str(pos_w) + ".png");
+                # crop.save("/opt/crop" + str(imgid) + "-" +  str(pos_h) + "-" + str(pos_w) + ".png");
 
                 # インストールしたtesseractコマンドのパス
                 pytesseract.tesseract_cmd = "/usr/bin/tesseract";
