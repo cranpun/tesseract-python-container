@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  tesseractpython:
+    build: ./
+    image: tesseractpython
+    container_name: tesseractpython
+    volumes:
+      - .:/opt
