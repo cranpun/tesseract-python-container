@@ -28,3 +28,5 @@ $ docker-compose exec tesseractpython tesseract /opt/sample/textsample.png
   # output result of reading sampletext.png
 ```
 
+# image build
+2020-01-07
