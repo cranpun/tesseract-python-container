@@ -30,6 +30,6 @@ if __name__ == '__main__':
                 pytesseract.tesseract_cmd = "/usr/bin/tesseract";
 
                 # -psm 8は1文字判定のフラグ
-                result = pytesseract.image_to_string(crop, config="-psm 10", lang="eng+jpn");
+                result = pytesseract.image_to_string(crop, config="--psm 10", lang="eng+jpn");
 
                 print(result);
